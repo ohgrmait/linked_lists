@@ -18,15 +18,20 @@ list.append('turtle')
 
 # puts 'Testing out the #prepend method...'
 
-list.prepend('dog')
-list.prepend('cat')
-list.prepend('parrot')
-list.prepend('hamster')
-list.prepend('snake')
-list.prepend('turtle')
+# list.prepend('dog')
+# list.prepend('cat')
+# list.prepend('parrot')
+# list.prepend('hamster')
+# list.prepend('snake')
+# list.prepend('turtle')
 
 # puts list
 
-puts 'Testing out the #size method...'
+# puts 'Testing out the #size method...'
 
-puts list.size
+# puts list.size
+
+puts 'Testing out the #head and #tail methods...'
+
+puts list.head
+puts list.tail
