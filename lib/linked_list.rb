@@ -42,6 +42,21 @@ class LinkedList # rubocop:disable Style/Documentation
     count
   end
 
+  def at(index)
+    # returns the node at the given index
+    raise 'invalid index' unless index >= 0 &&
+                                 index < size
+
+    count = 0
+    tmp = @head
+    until tmp.nil?
+      return tmp if count == index
+
+      count += 1
+      tmp = tmp.next_node
+    end
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
