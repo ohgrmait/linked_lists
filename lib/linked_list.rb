@@ -82,6 +82,20 @@ class LinkedList # rubocop:disable Style/Documentation
     false
   end
 
+  def find(value)
+    # returns the index of the node containing value, or nil
+    # if not found
+    count = 0
+    tmp = @head
+    until tmp.nil?
+      return count if tmp.value == value
+
+      count += 1
+      tmp = tmp.next_node
+    end
+    nil
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
