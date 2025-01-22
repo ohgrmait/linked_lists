@@ -66,9 +66,20 @@ list.append('turtle')
 # puts list.contains?('hamster')
 # puts list.contains?('mammoth')
 
-puts 'Testing out the #find(value) method...'
+# puts 'Testing out the #find(value) method...'
 
-p list.find('dog')
-p list.find('dinosaur')
-p list.find('turtle')
-p list.find('wolf')
+# p list.find('dog')
+# p list.find('dinosaur')
+# p list.find('turtle')
+# p list.find('wolf')
+
+puts 'Testing out the #insert(value, index) method...'
+
+list.insert_at('dinosaur', 0)
+puts list
+list.insert_at('mammoth', 3)
+puts list
+list.insert_at('wolves', 5)
+puts list
+list.insert_at('pup', -4)
+puts list
