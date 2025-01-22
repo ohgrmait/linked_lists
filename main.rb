@@ -73,13 +73,22 @@ list.append('turtle')
 # p list.find('turtle')
 # p list.find('wolf')
 
-puts 'Testing out the #insert(value, index) method...'
+# puts 'Testing out the #insert(value, index) method...'
 
-list.insert_at('dinosaur', 0)
+# list.insert_at('dinosaur', 0)
+# puts list
+# list.insert_at('mammoth', 3)
+# puts list
+# list.insert_at('wolves', 5)
+# puts list
+# list.insert_at('pup', -4)
+# puts list
+
+puts 'Testing out the #remove_at(index) method...'
+
+list.remove_at(5)
 puts list
-list.insert_at('mammoth', 3)
+list.remove_at(3)
 puts list
-list.insert_at('wolves', 5)
-puts list
-list.insert_at('pup', -4)
+list.remove_at(0)
 puts list
