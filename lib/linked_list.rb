@@ -96,6 +96,33 @@ class LinkedList # rubocop:disable Style/Documentation
     nil
   end
 
+  def insert_at(value, index)
+    # inserts a new node with the provided value at the given index
+    raise 'invalid index' unless index >= 0 &&
+                                 index < size
+    return nil if @head.nil?
+
+    if index.zero?
+      new_node = Node.new(value)
+      new_node.next_node = @head
+      @head = new_node
+      return
+    end
+    key = 0
+    prev = nil
+    curr = @head
+    until curr.nil? || key == index
+      key += 1
+      prev = curr
+      curr = curr.next_node
+    end
+    return if curr.nil?
+
+    new_node = Node.new(value)
+    prev.next_node = new_node
+    new_node.next_node = curr
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
