@@ -43,18 +43,25 @@ list.append('turtle')
 # puts list.at(5)
 # puts list.at(-2)
 
-puts 'Testing out the pop method...'
+# puts 'Testing out the #pop method...'
 
-puts list
-list.pop
-puts list
-list.pop
-puts list
-list.pop
-puts list
-list.pop
-puts list
-list.pop
-puts list
-list.pop
-puts list
+# puts list
+# list.pop
+# puts list
+# list.pop
+# puts list
+# list.pop
+# puts list
+# list.pop
+# puts list
+# list.pop
+# puts list
+# list.pop
+# puts list
+
+puts 'Testing out the #contains?(value) method...'
+
+puts list.contains?('dog')
+puts list.contains?('dinosaur')
+puts list.contains?('hamster')
+puts list.contains?('mammoth')
