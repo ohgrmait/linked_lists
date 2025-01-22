@@ -57,6 +57,19 @@ class LinkedList # rubocop:disable Style/Documentation
     end
   end
 
+  def pop
+    # removes the last element from the list
+    return nil if @head.nil?
+
+    if size == 1
+      @head = nil
+      return
+    end
+    tmp = @head
+    tmp = tmp.next_node until tmp.next_node.next_node.nil?
+    tmp.next_node = nil
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
