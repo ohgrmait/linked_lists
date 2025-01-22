@@ -17,6 +17,18 @@ class LinkedList # rubocop:disable Style/Documentation
     @tail = new_node
   end
 
+  def prepend(value)
+    # adds a new node containing value to the start of the list
+    new_node = Node.new(value)
+    if @head.nil?
+      @head = new_node
+      @tail = new_node
+    else
+      new_node.next_node = @head
+      @head = new_node
+    end
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
