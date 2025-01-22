@@ -14,7 +14,7 @@ list.append('hamster')
 list.append('snake')
 list.append('turtle')
 
-# puts list
+puts list
 
 # puts 'Testing out the #prepend method...'
 
@@ -84,11 +84,11 @@ list.append('turtle')
 # list.insert_at('pup', -4)
 # puts list
 
-puts 'Testing out the #remove_at(index) method...'
+# puts 'Testing out the #remove_at(index) method...'
 
-list.remove_at(5)
-puts list
-list.remove_at(3)
-puts list
-list.remove_at(0)
-puts list
+# list.remove_at(5)
+# puts list
+# list.remove_at(3)
+# puts list
+# list.remove_at(0)
+# puts list
