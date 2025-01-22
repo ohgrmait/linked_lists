@@ -123,6 +123,27 @@ class LinkedList # rubocop:disable Style/Documentation
     new_node.next_node = curr
   end
 
+  def remove_at(index)
+    # removes the node at the given index
+    raise 'invalid index' unless index >= 0 &&
+                                 index < size
+    return nil if @head.nil?
+
+    if index.zero?
+      @head = @head.next_node
+      return
+    end
+    key = 0
+    prev = nil
+    curr = @head
+    until curr.nil? || key == index
+      key += 1
+      prev = curr
+      curr = curr.next_node
+    end
+    prev.next_node = curr.next_node
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
