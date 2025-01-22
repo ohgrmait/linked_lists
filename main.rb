@@ -31,7 +31,14 @@ list.append('turtle')
 
 # puts list.size
 
-puts 'Testing out the #head and #tail methods...'
+# puts 'Testing out the #head and #tail methods...'
 
-puts list.head
-puts list.tail
+# puts list.head
+# puts list.tail
+
+puts 'Testing out the #at(index) method...'
+
+puts list.at(0)
+puts list.at(3)
+puts list.at(5)
+puts list.at(-2)
