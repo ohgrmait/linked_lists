@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class LinkedList # rubocop:disable Style/Documentation
+  attr_reader :head, :tail
+
   def initialize
     @head = nil
     @tail = nil
