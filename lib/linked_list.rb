@@ -70,6 +70,18 @@ class LinkedList # rubocop:disable Style/Documentation
     tmp.next_node = nil
   end
 
+  def contains?(value)
+    # returns true if the passed in value is in the list and
+    # otherwise returns false
+    tmp = @head
+    until tmp.nil?
+      return true if tmp.value == value
+
+      tmp = tmp.next_node
+    end
+    false
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
