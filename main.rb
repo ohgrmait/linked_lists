@@ -59,9 +59,16 @@ list.append('turtle')
 # list.pop
 # puts list
 
-puts 'Testing out the #contains?(value) method...'
+# puts 'Testing out the #contains?(value) method...'
 
-puts list.contains?('dog')
-puts list.contains?('dinosaur')
-puts list.contains?('hamster')
-puts list.contains?('mammoth')
+# puts list.contains?('dog')
+# puts list.contains?('dinosaur')
+# puts list.contains?('hamster')
+# puts list.contains?('mammoth')
+
+puts 'Testing out the #find(value) method...'
+
+p list.find('dog')
+p list.find('dinosaur')
+p list.find('turtle')
+p list.find('wolf')
