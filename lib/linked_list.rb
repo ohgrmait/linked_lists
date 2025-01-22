@@ -29,6 +29,17 @@ class LinkedList # rubocop:disable Style/Documentation
     end
   end
 
+  def size
+    # returns the total number of nodes in the list
+    count = 0
+    tmp = @head
+    until tmp.nil?
+      count += 1
+      tmp = tmp.next_node
+    end
+    count
+  end
+
   def to_s
     # represent your LinkedList objects as strings, so you can
     # print them out and preview them in the console. The format
